@@ -134,7 +134,7 @@ $fullWidth: 1024px;
 
             @include make-modal(800px, 640px);
 
-            .hide   {
+            .hide-modal   {
                 border: none;
                 background: none;
                 svg {

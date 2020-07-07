@@ -19,7 +19,7 @@ export default class ConsentModal extends React.Component {
         if (!config.mustConsent) {
             closeLink = <button
                 title={t(['close'])}
-                className="hide"
+                className="hide-modal"
                 type="button"
                 onClick={hide}
             >
