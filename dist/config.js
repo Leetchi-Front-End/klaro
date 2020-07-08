@@ -51,7 +51,10 @@ var klaroConfig = {
     hideLearnMore: false,
 
     // Use text instead of close button
-    modalCloseButtonIsText: false
+    modalCloseButtonIsText: false,
+
+    // User can show / hide toggle all button
+    showToggleAllApps: false,
 
     // You can define the UI language directly here. If undefined, Klaro will
     // use the value given in the global "lang" variable. If that does
