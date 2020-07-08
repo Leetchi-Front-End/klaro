@@ -55,10 +55,12 @@ export default class ConsentModal extends React.Component {
                 <div className="cm-header">
                     {closeLink}
                     <h1 className="title">{t(['consentModal', 'title'])}</h1>
-                    <p>
-                        {t(['consentModal', 'description'])} &nbsp;
-                        {t(['consentModal', 'privacyPolicy', 'text'], { privacyPolicy: ppLink })}
-                    </p>
+                    {config.noticeIsModal &&
+                        <p>
+                            {t(['consentModal', 'description'])} &nbsp;
+                            {t(['consentModal', 'privacyPolicy', 'text'], { privacyPolicy: ppLink })}
+                        </p>
+                    }
                 </div>
                 <div className="cm-body">
                     <Apps t={t} config={config} manager={manager} />
