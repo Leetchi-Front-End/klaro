@@ -50,6 +50,9 @@ var klaroConfig = {
     // hide "learnMore" link
     hideLearnMore: false,
 
+    // Use text instead of close button
+    modalCloseButtonIsText: false
+
     // You can define the UI language directly here. If undefined, Klaro will
     // use the value given in the global "lang" variable. If that does
     // not exist, it will use the value given in the "lang" attribute of your

@@ -23,7 +23,13 @@ export default class ConsentModal extends React.Component {
                 type="button"
                 onClick={hide}
             >
-                <Close t={t} />
+                {!config.modalCloseButtonIsText ?
+                    <Close t={t} />
+                :
+                    <strong>
+                        {t(['close'])}
+                    </strong>
+                }
             </button>
         }
         
