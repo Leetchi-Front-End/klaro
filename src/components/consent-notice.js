@@ -179,9 +179,10 @@ export default class ConsentNotice extends React.Component {
                         <h1 className="title">
                             {t(['consentNotice', 'title'])}
                         </h1>
+                        <p>
                             {t(['consentNotice', 'description'])} 
                             {t(['consentNotice', 'privacyPolicy', 'text'], { privacyPolicy: ppLink })}
-                        
+                        </p>                        
                     </div>
                     <div className="cm-body">
                         <div className="cn-ok">
