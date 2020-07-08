@@ -55,7 +55,7 @@ export default class ConsentModal extends React.Component {
                 <div className="cm-header">
                     {closeLink}
                     <h1 className="title">{t(['consentModal', 'title'])}</h1>
-                    {config.noticeIsModal &&
+                    {!config.noticeIsModal &&
                         <p>
                             {t(['consentModal', 'description'])} &nbsp;
                             {t(['consentModal', 'privacyPolicy', 'text'], { privacyPolicy: ppLink })}
